@@ -6,6 +6,7 @@
     <ignored path="$PROJECT_DIR$/entity/target/" />
     <ignored path="$PROJECT_DIR$/app/target/" />
     <ignored path="$PROJECT_DIR$/dao/target/" />
+    <ignored path="$PROJECT_DIR$/common/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +16,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="OAuth2Realm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/oauth2/OAuth2Realm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-21">
+              <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1082#1083#0" expanded="true" />
+                <element signature="e#1133#1134#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShiroConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/oauth2/ShiroConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-94">
+              <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/login/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+            <state relative-caret-position="591">
+              <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1276#1277#0" expanded="true" />
+                <element signature="e#1306#1307#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OAuth2Filter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/oauth2/OAuth2Filter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -27,97 +68,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/App.java">
+      <file leaf-file-name="ShiroUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/oauth2/ShiroUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#471#472#0" expanded="true" />
-                <element signature="e#525#526#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="340">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/pom.xml">
+      <file leaf-file-name="AuthenticatingFilter.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.3.2/shiro-web-1.3.2.jar!/org/apache/shiro/web/filter/authc/AuthenticatingFilter.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+            <state relative-caret-position="142">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/xml/UserMapper.xml">
+      <file leaf-file-name="OAuth2Token.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/oauth2/OAuth2Token.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="21" selection-start-line="15" selection-start-column="6" selection-end-line="20" selection-end-column="21" />
+            <state relative-caret-position="120">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="application-dev.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/resources/application-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+            <state relative-caret-position="273">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/UserMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#433#434#0" expanded="true" />
-                <element signature="e#481#482#0" expanded="true" />
-                <element signature="e#524#525#0" expanded="true" />
-                <element signature="e#567#568#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
+      <file leaf-file-name="application-pro.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/resources/application-pro.yml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -134,6 +128,15 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>my</find>
+      <find>StringUtils</find>
+      <find>beginningDelimiter</find>
+      <find>com.sangxiang.dao.SysPermission</find>
+      <find>ManagerInfoServiceImpl</find>
+      <find>ManagerInfo</find>
+      <find>com.emucoo.model.SysArea</find>
+      <find>com.sangxiang.dao.SysUser</find>
+      <find>com.sangxiang.dao.SysUserToken</find>
+      <find>permissionList</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -146,27 +149,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/entity/pom.xml" />
-        <option value="$PROJECT_DIR$/entity/src/main/java/com/sangxiang/model/TestClass.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/dao/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/sangxiang/base/model/BaseEntity.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/sangxiang/DateEditor.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/sangxiang/StringEditor.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/sangxiang/base/controller/BaseController.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/sangxiang/base/controller/GlobalErrorController.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/sangxiang/base/controller/ExceptionAdvice.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/sangxiang/base/mapper/MyMapper.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/sangxiang/base/redis/PropertiesUtil.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/sangxiang/base/redis/RedisCachedUtil.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/sangxiang/exception/ApiSignatureException.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/sangxiang/ExecStatus.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/sangxiang/exception/RepeatedSubmitFormException.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/sangxiang/exception/ServiceException.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/sangxiang/exception/ValidateException.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/sangxiang/base/rest/RestClient.java" />
+        <option value="$PROJECT_DIR$/common/pom.xml" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/sangxiang/base/service/BaseService.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/sangxiang/base/service/impl/BaseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/resources/application-pro.yml" />
         <option value="$PROJECT_DIR$/dao/pom.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/UserService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/mapper/xml/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/mapper/UserInterface.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/app/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/model/User.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/SysUser.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/mapper/xml/SysPermissionMapper.xml" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/model/SysPermission.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/SysPermissionMapper.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/UserService.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/login/LoginController.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/xml/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/App.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/model/User.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/mapper/xml/SysRoleMapper.xml" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/SysUserService.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/SysRoleService.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/SysUserMapper.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/SysRoleMapper.java" />
         <option value="$PROJECT_DIR$/app/pom.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/impl/SysUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/impl/SysRoleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/xml/SysPermissionMapper.xml" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/impl/SysUserTokenServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/SysUserTokenService.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/SysUserTokenMapper.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/xml/SysRoleMapper.xml" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/xml/SysUserMapper.xml" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/xml/SysUserTokenMapper.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/model/SysRole.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/model/SysUser.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/login/LoginController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/oauth2/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/oauth2/OAuth2Realm.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/oauth2/OAuth2Filter.java" />
       </list>
     </option>
   </component>
@@ -196,7 +229,8 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="entity" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="dao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
@@ -205,19 +239,19 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1440" />
-    <option name="y" value="83" />
-    <option name="width" value="1920" />
-    <option name="height" value="997" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="2" />
+    <option name="y" value="30" />
+    <option name="width" value="1440" />
+    <option name="height" value="820" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,11 +259,29 @@
               <item name="shuadan" type="b2602c69:ProjectViewProjectNode" />
               <item name="shuadan" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="shuadan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shuadan" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shuadan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shuadan" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shuadan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shuadan" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -245,20 +297,25 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/xml" />
-      <recent name="$PROJECT_DIR$/app/src/main/resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.sangxiang.dao.model" />
-      <recent name="com.sangxiang.dao.mapper" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/resources" />
       <recent name="$PROJECT_DIR$/dao/src/main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sangxiang.dao.service.impl" />
+      <recent name="com.sangxiang.dao.service" />
+      <recent name="com.sangxiang.dao.model" />
+      <recent name="com.sangxiang.dao.mapper" />
+      <recent name="com.sangxiang" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/resources" />
+      <recent name="$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/xml" />
+      <recent name="$PROJECT_DIR$/common/src/main/java/com/sangxiang" />
+      <recent name="$PROJECT_DIR$/common/src/main/java/com/sangxiang/util" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -377,19 +434,37 @@
       <workItem from="1542959022206" duration="130000" />
       <workItem from="1542959343531" duration="204000" />
       <workItem from="1542961168003" duration="61000" />
-      <workItem from="1542961281017" duration="445000" />
+      <workItem from="1542961281017" duration="3579000" />
+      <workItem from="1543198330644" duration="4348000" />
+      <workItem from="1544169297153" duration="4879000" />
+      <workItem from="1544351620032" duration="1799000" />
+      <workItem from="1544410240103" duration="762000" />
+      <workItem from="1544411070429" duration="31000" />
+      <workItem from="1544411123767" duration="58000" />
+      <workItem from="1544411202668" duration="29608000" />
+      <workItem from="1544514585417" duration="17412000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28981000" />
+    <option name="totallyTimeSpent" value="91012000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="23" width="1920" height="1057" extended-state="6" />
+    <frame x="2" y="30" width="1440" height="820" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.19009584" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.25751072" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -397,20 +472,21 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32954547" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.40285715" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32765958" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32907802" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5410886" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.32954547" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26783812" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28428572" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32907802" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22317597" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32863188" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -418,7 +494,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,215 +502,372 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/oauth2/OAuth2Realm.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/oauth2/OAuth2Realm.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="24" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/sangxiang/util/FileValidateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+        <state relative-caret-position="132">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/sangxiang/util/GetRequestJsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/mapper/xml/UserMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/mapper/UserInterface.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/UserService.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/mapper/UserMapper.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/login/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/sangxiang/util/HttpContextUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/User.java" />
     <entry file="file://$PROJECT_DIR$/dao/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="16" selection-start-line="25" selection-start-column="3" selection-end-line="45" selection-end-column="16" />
+        <state relative-caret-position="285">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+        <state relative-caret-position="1095">
+          <caret line="73" column="26" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/mapper/xml/UserMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/mapper/UserInterface.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/UserService.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/mapper/UserMapper.java" />
-    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/sangxiang/App.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/sangxiang/AppTest.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/App.java" />
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/SysUser.java" />
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/model/SysPermission.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/mapper/xml/SysPermissionMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        <state relative-caret-position="105">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/resources/application.yml" />
-    <entry file="file://$PROJECT_DIR$/app/target/classes/com/sangxiang/app/login/LoginController.class" />
-    <entry file="file://$PROJECT_DIR$/app/target/classes/application.properties" />
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/App.java" />
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/xml/SysAreaMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/test.java" />
-    <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/sangxiang/model/TestClass.java">
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/impl/ManagerInfoServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="75">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/test.java" />
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/xml/UserMapper.java" />
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/UserMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/entity/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/com/sangxiang/dao/User.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/mapper/UserInterface.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/User.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/UserService.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/mapper/xml/UserMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/mapper/UserMapper.java" />
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/xml/ManagerInfoMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/ManagerInfoMapper.java" />
     <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="302">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/mapper/SysRoleMapper.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/mapper/xml/SysRoleMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/xml/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/SysUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/dao/SysRole.java" />
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/SysRoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/SysPermissionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="68" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/SysUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/SysRoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/resources/templates/aix.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/impl/SysUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <folding>
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/impl/SysRoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/xml/SysPermissionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/impl/SysUserTokenServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        <state relative-caret-position="105">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/service/SysUserTokenService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/SysUserTokenMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/UserMapper.java">
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/xml/SysUserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="19" />
+        <state relative-caret-position="315">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/xml/UserMapper.xml">
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/xml/SysUserTokenMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="225">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/pom.xml">
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/mapper/xml/SysRoleMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="21" selection-start-line="15" selection-start-column="6" selection-end-line="20" selection-end-column="21" />
+        <state relative-caret-position="45">
+          <caret line="3" column="66" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/model/SysRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/sangxiang/dao/model/SysUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1281#1282#0" expanded="true" />
+            <element signature="e#1322#1323#0" expanded="true" />
+            <element signature="e#1354#1355#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="96" selection-start-line="9" selection-start-column="96" selection-end-line="9" selection-end-column="96" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        <state relative-caret-position="-474">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-116">
+          <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/resources/application-pro.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/login/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+        <state relative-caret-position="591">
+          <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1306#1307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/oauth2/ShiroUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/oauth2/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-94">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/oauth2/OAuth2Realm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        <state relative-caret-position="-21">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1133#1134#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/App.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.3.2/shiro-web-1.3.2.jar!/org/apache/shiro/web/filter/authc/AuthenticatingFilter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="142">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/oauth2/OAuth2Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sangxiang/app/oauth2/OAuth2Filter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
           </folding>
         </state>
       </provider>
