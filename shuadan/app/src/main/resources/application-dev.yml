@@ -14,6 +14,14 @@ mybatis:
   mapper-locations: classpath*:com/sangxiang/dao/**/*.xml
   configuration:
     map-underscore-to-camel-case: true
+
+#通用mapper
+mapper:
+  mappers:
+      - com.sangxiang.base.mapper.MyMapper
+  not-empty: false
+  identity: MYSQL
+
 #分页插件
 pagehelper:
   helperDialect: mysql

@@ -1,9 +1,16 @@
 package com.sangxiang.dao.model;
 
-import javax.persistence.Transient;
+import com.sangxiang.base.model.BaseEntity;
+import lombok.Data;
+
+import javax.persistence.*;
+import java.util.Date;
 import java.util.List;
 
-public class SysUser {
+@Table(name = "sys_user")
+public class SysUser extends BaseEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String username;
@@ -13,8 +20,33 @@ public class SysUser {
     private String password;
 
     private String salt;
+    //用户状态：0-启用；1-停用；2-锁定；
+    private int state;
 
-    private Boolean state;
+    private String mobile;
+
+    private String email;
+
+    @Column(name = "create_time")
+    private Date createTime;
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
 
     public Integer getId() {
         return id;
@@ -56,23 +88,31 @@ public class SysUser {
         this.salt = salt == null ? null : salt.trim();
     }
 
-    public Boolean getState() {
+    public int getState() {
         return state;
     }
 
-    public void setState(Boolean state) {
+    public void setState(int state) {
         this.state = state;
     }
 
-    @Transient
-    private  SysRole role;
+//    @Transient
+//    private  SysRole role;
+//
+//
+//    public SysRole getRole() {
+//        return role;
+//    }
+//
+//    public void setRole(SysRole role) {
+//        this.role = role;
+//    }
 
-
-    public SysRole getRole() {
-        return role;
+    public Date getCreateTime() {
+        return createTime;
     }
 
-    public void setRole(SysRole role) {
-        this.role = role;
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
     }
 }

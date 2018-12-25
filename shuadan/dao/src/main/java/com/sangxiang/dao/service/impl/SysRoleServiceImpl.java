@@ -1,5 +1,6 @@
 package com.sangxiang.dao.service.impl;
 
+        import com.sangxiang.base.service.impl.BaseServiceImpl;
         import com.sangxiang.dao.mapper.SysRoleMapper;
         import com.sangxiang.dao.mapper.SysUserMapper;
         import com.sangxiang.dao.model.SysRole;
@@ -12,7 +13,7 @@ package com.sangxiang.dao.service.impl;
         import java.util.List;
 
 @Service
-public class SysRoleServiceImpl implements SysRoleService {
+public class SysRoleServiceImpl extends BaseServiceImpl<SysRole> implements SysRoleService {
     @Autowired
     SysRoleMapper sysRoleMapper;
 

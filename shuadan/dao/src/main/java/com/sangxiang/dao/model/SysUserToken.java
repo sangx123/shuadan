@@ -1,8 +1,12 @@
 package com.sangxiang.dao.model;
 
+import com.sangxiang.base.model.BaseEntity;
+
+import javax.persistence.Id;
 import java.util.Date;
 
-public class SysUserToken {
+public class SysUserToken  extends BaseEntity {
+    @Id
     private Integer userid;
 
     private String token;

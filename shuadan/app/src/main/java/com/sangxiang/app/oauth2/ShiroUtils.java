@@ -1,5 +1,6 @@
 package com.sangxiang.app.oauth2;
 
+import com.sangxiang.dao.model.SysUser;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
@@ -17,13 +18,13 @@ public class ShiroUtils {
 		return SecurityUtils.getSubject();
 	}
 
-//	public static SysUser getUser() {
-//		return (SysUser) SecurityUtils.getSubject().getPrincipal();
-//	}
-//
-//	public static Long getUserId() {
-//		return getUser().getId();
-//	}
+	public static SysUser getUser() {
+		return (SysUser) SecurityUtils.getSubject().getPrincipal();
+	}
+
+	public static Integer getUserId() {
+		return getUser().getId();
+	}
 
 	public static void setSessionAttribute(Object key, Object value) {
 		getSession().setAttribute(key, value);

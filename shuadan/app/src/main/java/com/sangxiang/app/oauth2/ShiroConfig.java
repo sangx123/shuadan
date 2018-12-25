@@ -52,8 +52,10 @@ public class ShiroConfig {
 
         Map<String, String> filterMap = new LinkedHashMap<>();
         // 配置不会被拦截的链接 顺序判断
-        //登陆可以匿名访问
+        //登陆，注册，忘记密码 可以匿名访问
         filterMap.put("/login", "anon");
+        filterMap.put("/register", "anon");
+        filterMap.put("/find-password", "anon");
         filterMap.put("/", "anon");
         //需要已认证
         filterMap.put("/**", "oauth2");

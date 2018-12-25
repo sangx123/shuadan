@@ -1,9 +1,13 @@
 package com.sangxiang.dao.model;
 
+import com.sangxiang.base.model.BaseEntity;
+
+import javax.persistence.Id;
 import javax.persistence.Transient;
 import java.util.List;
 
-public class SysRole {
+public class SysRole extends BaseEntity {
+    @Id
     private Integer id;
 
     private String role;

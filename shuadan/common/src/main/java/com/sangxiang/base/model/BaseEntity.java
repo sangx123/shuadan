@@ -10,6 +10,4 @@ import javax.persistence.Column;
  */
 @Data
 public abstract class BaseEntity implements java.io.Serializable{
-    @Column(name = "org_id")
-    private Long orgId;
 }

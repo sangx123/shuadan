@@ -42,16 +42,17 @@ public class OAuth2Realm extends AuthorizingRealm {
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
         //principals为SimpleAuthenticationInfo中的第一个参数
-        SysUser user = (SysUser)principals.getPrimaryPrincipal();
-        SysUser userRole= sysUserService.queryUserRole(user.getId());
-        //暂时定位一个角色只有一个权限
-        SysRole roles = roleService.queryRolePermission(userRole.getRole().getId());
-        SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
-        info.addRole(userRole.getName());
-        for(SysPermission permission:roles.getPermissionList()){
-            info.addStringPermission(permission.getPermission());
-        }
-        return info;
+//        SysUser user = (SysUser)principals.getPrimaryPrincipal();
+//        SysUser userRole= sysUserService.queryUserRole(user.getId());
+//        //暂时定位一个角色只有一个权限
+//        SysRole roles = roleService.queryRolePermission(userRole.getRole().getId());
+//        SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
+//        info.addRole(userRole.getName());
+//        for(SysPermission permission:roles.getPermissionList()){
+//            info.addStringPermission(permission.getPermission());
+//        }
+//        return info;
+        return null;
     }
 
     /**
@@ -70,14 +71,14 @@ public class OAuth2Realm extends AuthorizingRealm {
         }
 
         //查询用户信息
-        SysUser user = sysUserService.queryUser(tokenEntity.getUserid().longValue());
+        SysUser user = sysUserService.queryUser(tokenEntity.getUserid());
 
         if(user == null) {
             throw new UnknownAccountException("账号或密码不正确!");
         }
 
         //账号锁定
-        if(null==user.getState() || !user.getState()){
+        if(user.getState()!=0){
             throw new LockedAccountException("账号未启用,请联系管理员!");
         }
         //参数1：user信息，参数2：密码，参数3：getName()当前realm名字
