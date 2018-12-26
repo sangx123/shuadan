@@ -96,17 +96,17 @@ public class SysUser extends BaseEntity {
         this.state = state;
     }
 
-//    @Transient
-//    private  SysRole role;
-//
-//
-//    public SysRole getRole() {
-//        return role;
-//    }
-//
-//    public void setRole(SysRole role) {
-//        this.role = role;
-//    }
+    @Transient
+    private  SysRole role;
+
+
+    public SysRole getRole() {
+        return role;
+    }
+
+    public void setRole(SysRole role) {
+        this.role = role;
+    }
 
     public Date getCreateTime() {
         return createTime;

@@ -42,17 +42,16 @@ public class OAuth2Realm extends AuthorizingRealm {
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
         //principals为SimpleAuthenticationInfo中的第一个参数
-//        SysUser user = (SysUser)principals.getPrimaryPrincipal();
-//        SysUser userRole= sysUserService.queryUserRole(user.getId());
-//        //暂时定位一个角色只有一个权限
-//        SysRole roles = roleService.queryRolePermission(userRole.getRole().getId());
-//        SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
-//        info.addRole(userRole.getName());
-//        for(SysPermission permission:roles.getPermissionList()){
-//            info.addStringPermission(permission.getPermission());
-//        }
-//        return info;
-        return null;
+        SysUser user = (SysUser)principals.getPrimaryPrincipal();
+        SysUser userRole= sysUserService.queryUserRole(user.getId());
+        //暂时定位一个角色只有一个权限
+        SysRole roles = roleService.queryRolePermission(userRole.getRole().getId());
+        SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
+        info.addRole(userRole.getName());
+        for(SysPermission permission:roles.getPermissionList()){
+            info.addStringPermission(permission.getPermission());
+        }
+        return info;
     }
 
     /**
