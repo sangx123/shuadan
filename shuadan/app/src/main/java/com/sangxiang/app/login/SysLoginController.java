@@ -88,17 +88,17 @@ public class SysLoginController extends BaseResource {
 	@PostMapping("/register")
 	// @RequiresPermissions("sys:user:save")
 	public ApiResult register(@RequestBody SysUser sysUser){
-//		int result=checkUser(sysUser);
-//		if(0!=result){
-//			if(result==-1) {
-//				return  fail(ApiExecStatus.INVALID_PARAM,"username已存在!");
+		int result=checkUser(sysUser);
+		if(0!=result){
+			if(result==-1) {
+				return  fail(ApiExecStatus.INVALID_PARAM,"username已存在!");
+			}
+//			else if(result==-2) {
+//				return  fail(ApiExecStatus.INVALID_PARAM,"手机号已存在!");
+//			} else if(result==-3) {
+//				return  fail(ApiExecStatus.INVALID_PARAM,"email已存在!");
 //			}
-////			else if(result==-2) {
-////				return  fail(ApiExecStatus.INVALID_PARAM,"手机号已存在!");
-////			} else if(result==-3) {
-////				return  fail(ApiExecStatus.INVALID_PARAM,"email已存在!");
-////			}
-//		}
+		}
 
 		sysUser.setCreateTime(new Date());
 		//sha256加密

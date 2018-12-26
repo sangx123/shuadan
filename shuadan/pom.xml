@@ -39,6 +39,12 @@
       </dependency>
 
 
+      <!--pagehelper-->
+      <dependency>
+        <groupId>com.github.pagehelper</groupId>
+        <artifactId>pagehelper-spring-boot-starter</artifactId>
+        <version>1.2.3</version>
+      </dependency>
 
 
       <!-- shiro 权限控制 -->
