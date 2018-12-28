@@ -55,6 +55,8 @@ public class ShiroConfig {
         //登陆，注册，忘记密码 可以匿名访问
         filterMap.put("/login", "anon");
         filterMap.put("/register", "anon");
+         //filterMap.put("/applyTask", "anon");
+        filterMap.put("/test", "anon");
         filterMap.put("/find-password", "anon");
         filterMap.put("/", "anon");
         //需要已认证

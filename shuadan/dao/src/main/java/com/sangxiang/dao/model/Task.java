@@ -2,6 +2,7 @@ package com.sangxiang.dao.model;
 
 import com.sangxiang.base.model.BaseEntity;
 
+import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -10,7 +11,7 @@ import java.util.Date;
 public class Task extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer taskid;
+    private Integer id;
 
     private Integer userid;
 
@@ -28,13 +29,7 @@ public class Task extends BaseEntity {
 
     private Integer state;
 
-    public Integer getTaskid() {
-        return taskid;
-    }
 
-    public void setTaskid(Integer taskid) {
-        this.taskid = taskid;
-    }
 
     public Integer getUserid() {
         return userid;
@@ -98,5 +93,13 @@ public class Task extends BaseEntity {
 
     public void setState(Integer state) {
         this.state = state;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

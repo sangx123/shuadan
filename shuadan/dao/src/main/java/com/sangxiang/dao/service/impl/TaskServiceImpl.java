@@ -22,9 +22,17 @@ public class TaskServiceImpl extends BaseServiceImpl<Task> implements TaskServic
     TaskMapper taskMapper;
 
     @Override
-    public void createTask(Task task) {
-        taskMapper.insertUseGeneratedKeys(task);
+    public int createTask(Task task) {
+         taskMapper.insertUseGeneratedKeys(task);
+
+         return task.getId();
     }
+
+    @Override
+    public Task queryById(int id) {
+        return taskMapper.queryById(id);
+    }
+
     @Transactional(readOnly = true)
     @Override
     public PageInfo<Task> findPage(Integer pageNum, Integer pageSize, int state) {
@@ -36,9 +44,9 @@ public class TaskServiceImpl extends BaseServiceImpl<Task> implements TaskServic
 
         //分页
         PageHelper.startPage(pageNum,pageSize);
-        List<Task> logList = this.selectByExample(example);
+        List<Task> list = this.selectByExample(example);
 
-        return new PageInfo<>(logList);
+        return new PageInfo<>(list);
     }
 
 

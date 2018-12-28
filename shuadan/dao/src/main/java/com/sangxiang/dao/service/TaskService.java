@@ -10,8 +10,15 @@ public interface TaskService extends BaseService<Task> {
      * 创建任务
      * @param
      */
-    void createTask(Task task);
+    int createTask(Task task);
 
+
+    /**
+     *
+     * @param id
+     * @return
+     */
+    Task queryById(int id);
     /**
      * 分页查询任务列表
      * @param pageNum

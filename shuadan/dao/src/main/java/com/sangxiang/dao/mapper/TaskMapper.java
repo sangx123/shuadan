@@ -6,5 +6,5 @@ import com.sangxiang.dao.model.Task;
 import java.util.List;
 
 public interface TaskMapper extends MyMapper<Task> {
-
+   Task queryById(int id);
 }

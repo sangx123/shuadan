@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.sangxiang.dao.mapper.TaskMapper">
   <resultMap id="BaseResultMap" type="com.sangxiang.dao.model.Task">
-    <id column="taskid" jdbcType="INTEGER" property="taskid" />
+    <id column="id" jdbcType="INTEGER" property="id" />
     <result column="userid" jdbcType="INTEGER" property="userid" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="title" jdbcType="VARCHAR" property="title" />
@@ -12,4 +12,8 @@
     <result column="total_price" jdbcType="REAL" property="totalPrice" />
     <result column="state" jdbcType="INTEGER" property="state" />
   </resultMap>
+
+  <select id="queryById" parameterType="int" resultType="com.sangxiang.dao.model.Task">
+        select * from task where id = #{value}
+    </select>
 </mapper>
