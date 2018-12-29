@@ -69,12 +69,15 @@ public class LoginController {
     @RequiresPermissions(value = {"permission:view"})
     public String hello(HttpServletRequest request,Model model){
         return "hello";
+
+
+
     }
 
     //aix页面
     //需要权限
     @RequestMapping(value = "/aix")
-    @RequiresPermissions(value = {"permission:aix"})
+    @RequiresPermissions(value = {"permission:aixsangxiang"})
     public String aix(HttpServletRequest request,Model model){
         return "aix";
     }
