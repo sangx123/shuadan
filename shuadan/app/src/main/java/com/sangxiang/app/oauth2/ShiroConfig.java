@@ -58,6 +58,7 @@ public class ShiroConfig {
          //filterMap.put("/applyTask", "anon");
         filterMap.put("/test", "anon");
         filterMap.put("/find-password", "anon");
+        filterMap.put("/alipay", "anon");
         filterMap.put("/", "anon");
         //需要已认证
         filterMap.put("/**", "oauth2");

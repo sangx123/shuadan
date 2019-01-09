@@ -7,7 +7,7 @@ import com.sangxiang.dao.model.SysUser;
 import com.sangxiang.dao.model.SysUserToken;
 import com.sangxiang.dao.service.SysUserService;
 import com.sangxiang.dao.service.SysUserTokenService;
-import com.sangxiang.model.SysUserLogin;
+import com.sangxiang.model.Login.SysUserLogin;
 import com.sangxiang.util.MD5Util;
 import com.sangxiang.util.StringUtil;
 import io.swagger.annotations.Api;

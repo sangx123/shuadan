@@ -1,4 +1,4 @@
-package com.sangxiang.model;
+package com.sangxiang.model.Login;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

@@ -9,7 +9,7 @@
   </resultMap>
 
 
-  <select id="queryByToken" parameterType="string" resultType="com.sangxiang.dao.model.SysUserToken">
+  <select id="queryByToken" parameterType="java.lang.String" resultType="com.sangxiang.dao.model.SysUserToken">
         select * from sys_user_token where token = #{value}
     </select>
 

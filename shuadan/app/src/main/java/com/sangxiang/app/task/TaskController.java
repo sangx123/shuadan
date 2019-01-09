@@ -2,14 +2,13 @@ package com.sangxiang.app.task;
 
 import com.github.pagehelper.PageInfo;
 import com.sangxiang.app.oauth2.ShiroUtils;
-import com.sangxiang.app.utils.RedisUtil;
 import com.sangxiang.base.rest.ApiResult;
 import com.sangxiang.base.rest.BaseResource;
 import com.sangxiang.dao.model.Task;
 import com.sangxiang.dao.service.TaskService;
 import com.sangxiang.dao.service.UserTaskService;
 import com.sangxiang.model.ApplyTaskParam;
-import com.sangxiang.model.HomeTaskParam;
+import com.sangxiang.model.Login.HomeTaskParam;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +23,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URI;
 import java.util.Date;
-import java.util.List;
 
 @RestController
 @Api(description="任务" )

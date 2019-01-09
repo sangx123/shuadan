@@ -1,4 +1,4 @@
-package com.sangxiang.model;
+package com.sangxiang.model.Login;
 
 public class HomeTaskParam {
     private Integer pageSize = 10;
