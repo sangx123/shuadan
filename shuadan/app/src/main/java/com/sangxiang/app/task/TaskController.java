@@ -70,7 +70,7 @@ public class TaskController extends BaseResource {
     @ApiOperation(value="获取任务列表")
     public  ApiResult<PageInfo<Task>> getUserTask(@RequestBody HomeTaskParam param){
         //先判断这个人是否已经申请过
-        return success (userTaskService.getUserTask(ShiroUtils.getUserId(),param.getPageNumber(),param.getPageSize()));
+        return success (userTaskService.getUserTask(ShiroUtils.getUserId(),0,param.getPageNumber(),param.getPageSize()));
     }
 
     @GetMapping(value = "/test")

@@ -16,4 +16,8 @@
   <select id="queryById" parameterType="int" resultType="com.sangxiang.dao.model.Task">
         select * from task where id = #{value}
     </select>
+  <select id="getShanhuTask"  resultType="com.sangxiang.dao.model.Task">
+        select * from task where userid = #{userid} AND state=#{state}
+    </select>
+
 </mapper>

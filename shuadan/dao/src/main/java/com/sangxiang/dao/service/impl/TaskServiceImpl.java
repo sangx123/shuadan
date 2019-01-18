@@ -49,5 +49,10 @@ public class TaskServiceImpl extends BaseServiceImpl<Task> implements TaskServic
         return new PageInfo<>(list);
     }
 
+    @Override
+    public List<Task> getShanhuTask(int userid, int status) {
+        return taskMapper.getShanhuTask(userid,status);
+    }
+
 
 }

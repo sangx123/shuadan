@@ -115,4 +115,19 @@ public class SysUser extends BaseEntity {
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
+
+    private Float money;
+
+    public Float getMoney() {
+        if(money==null){
+            money=0f;
+        }
+        return money;
+    }
+
+    public void setMoney(Float money) {
+        this.money = money;
+    }
+
+
 }

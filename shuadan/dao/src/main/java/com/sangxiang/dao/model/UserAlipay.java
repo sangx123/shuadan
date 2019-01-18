@@ -3,6 +3,7 @@ package com.sangxiang.dao.model;
 import com.sangxiang.base.model.BaseEntity;
 
 import javax.persistence.Id;
+import java.util.Date;
 
 public class UserAlipay extends BaseEntity {
     @Id
@@ -21,6 +22,12 @@ public class UserAlipay extends BaseEntity {
     private String description;
 
     private String createTime;
+
+    private Boolean useStatus;
+
+    private Integer useUserid;
+
+    private Date useTime;
 
     public String getTradeno() {
         return tradeno;
@@ -84,5 +91,29 @@ public class UserAlipay extends BaseEntity {
 
     public void setCreateTime(String createTime) {
         this.createTime = createTime == null ? null : createTime.trim();
+    }
+
+    public Boolean getUseStatus() {
+        return useStatus;
+    }
+
+    public void setUseStatus(Boolean useStatus) {
+        this.useStatus = useStatus;
+    }
+
+    public Integer getUseUserid() {
+        return useUserid;
+    }
+
+    public void setUseUserid(Integer useUserid) {
+        this.useUserid = useUserid;
+    }
+
+    public Date getUseTime() {
+        return useTime;
+    }
+
+    public void setUseTime(Date useTime) {
+        this.useTime = useTime;
     }
 }

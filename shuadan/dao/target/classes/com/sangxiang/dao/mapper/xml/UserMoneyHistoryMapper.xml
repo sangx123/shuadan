@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sangxiang.dao.mapper.UserMoneyHistoryMapper" >
+  <resultMap id="BaseResultMap" type="com.sangxiang.dao.model.UserMoneyHistory" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="type" property="type" jdbcType="INTEGER" />
+    <result column="money_before" property="moneyBefore" jdbcType="REAL" />
+    <result column="money_after" property="moneyAfter" jdbcType="REAL" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="description" property="description" jdbcType="VARCHAR" />
+    <result column="money_add" property="moneyAdd" jdbcType="REAL" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

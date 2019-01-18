@@ -15,7 +15,10 @@
       <result column="total_price" jdbcType="REAL" property="totalPrice" />
     </association>
   </resultMap>
-  <select id="queryUserTask" parameterType="int" resultType="com.sangxiang.dao.model.Task">
-          select t1.state ,t2.title from  user_task  t1 left join task t2 on t1.taskid=t2.id where t1.userid=#{value}
+  <select id="queryUserTask"  resultType="com.sangxiang.dao.model.Task">
+          select t1.state ,t2.title from  user_task  t1 left join task t2
+          on t1.taskid=t2.id where t1.userid=#{userid} AND
+          t1.state=#{state}
+
     </select>
 </mapper>

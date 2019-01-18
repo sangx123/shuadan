@@ -5,6 +5,8 @@ import com.sangxiang.base.mapper.MyMapper;
 import com.sangxiang.base.service.BaseService;
 import com.sangxiang.dao.model.Task;
 
+import java.util.List;
+
 public interface TaskService extends BaseService<Task> {
     /**
      * 创建任务
@@ -27,5 +29,5 @@ public interface TaskService extends BaseService<Task> {
      * @return
      */
     PageInfo<Task> findPage(Integer pageNum, Integer pageSize,int state);
-
+    List<Task> getShanhuTask(int userid, int status);
 }

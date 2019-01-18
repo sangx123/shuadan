@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sangxiang.dao.mapper.UserAlipayTixianMapper" >
+  <resultMap id="BaseResultMap" type="com.sangxiang.dao.model.UserAlipayTixian" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="user_tixian_money" property="userTixianMoney" jdbcType="REAL" />
+    <result column="user_tixian_name" property="userTixianName" jdbcType="VARCHAR" />
+    <result column="user_tixian_account" property="userTixianAccount" jdbcType="VARCHAR" />
+    <result column="user_tixian_time" property="userTixianTime" jdbcType="TIMESTAMP" />
+    <result column="user_tixian_left_money" property="userTixianLeftMoney" jdbcType="REAL" />
+    <result column="user_tixian_status" property="userTixianStatus" jdbcType="INTEGER" />
+    <result column="user_tixian_description" property="userTixianDescription" jdbcType="VARCHAR" />
+  </resultMap>
+  <select id="getTixianFromDay" resultMap="BaseResultMap">
+        SELECT
+        *
+        FROM user_alipay_tixian
+        where user_id=#{userId} AND user_tixian_time
+        BETWEEN #{startDate} AND #{endDate}
+    </select>
+
+    <select id="getTixianByUser" resultMap="BaseResultMap">
+        SELECT
+        *
+        FROM user_alipay_tixian
+        where user_id=#{userId} AND user_tixian_status=#{status}
+    </select>
+
+
+</mapper>

@@ -55,4 +55,29 @@ public class UserTask {
     public void setTask(Task task) {
         this.task = task;
     }
+
+    @Transient
+    public static int jie_shou=0;
+
+    @Transient
+    public static int yi_ti_jiao=1;
+
+    @Transient
+    public static int yi_wan_chen=2;
+
+    @Transient
+    public static int yi_guo_qi=3;
+
+    public String getStatusContent() {
+        switch(state){
+            case 0:statusContent="已接受";break;
+            case 1:statusContent="已提交";break;
+            case 2:statusContent="已完成";break;
+            case 3:statusContent="已过期";break;
+            default:statusContent="未知";
+        }
+        return statusContent;
+    }
+    @Transient
+    public String  statusContent;
 }

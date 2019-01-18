@@ -39,10 +39,15 @@ public class UserTaskServiceImpl extends BaseServiceImpl<UserTask>  implements U
     }
     @Transactional(readOnly = true)
     @Override
-    public PageInfo<Task> getUserTask(int userid,int pageNum,int pageSize) {
+    public PageInfo<Task> getUserTask(int userid,int state,int pageNum,int pageSize) {
         //分页
         PageHelper.startPage(pageNum,pageSize);
-        List<Task> list = userTaskMapper.queryUserTask(userid);
+        List<Task> list = userTaskMapper.queryUserTask(userid,state);
        return new PageInfo<>(list);
+    }
+
+    @Override
+    public List<Task> getUserTask(int userid, int status) {
+        return userTaskMapper.queryUserTask(userid,status);
     }
 }

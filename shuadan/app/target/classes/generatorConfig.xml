@@ -16,9 +16,9 @@
 
         <!-- 数据库连接 -->
         <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
-                        connectionURL="jdbc:mysql://127.0.0.1:3306/TestDB?characterEncoding=UTF-8"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/task_sys?characterEncoding=UTF-8"
                         userId="root"
-                        password="sx123456">
+                        password="sx890828">
         </jdbcConnection>
 
         <javaTypeResolver >
@@ -49,7 +49,7 @@
             <!--<property name="modelOnly" value="false"/>-->
         <!--</table>-->
 
-        <table tableName="user_alipay">
+        <table tableName="sys_user">
         </table>
 
     </context>

@@ -12,6 +12,7 @@
     <artifactId>dao</artifactId>
 
     <name>dao</name>
+    <packaging>jar</packaging>
     <dependencies>
         <dependency>
             <groupId>com.sangxiang</groupId>

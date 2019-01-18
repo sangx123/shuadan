@@ -26,4 +26,9 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUser> implements SysU
     public void addUser(SysUser sysUser){
         sysUserMapper.insertUseGeneratedKeys(sysUser);
     }
+
+    @Override
+    public SysUser queryUserByUserName(String userName) {
+        return sysUserMapper.queryUserByUserName(userName);
+    }
 }

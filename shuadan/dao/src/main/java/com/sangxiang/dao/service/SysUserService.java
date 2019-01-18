@@ -13,4 +13,6 @@ public interface SysUserService extends BaseService<SysUser> {
      * @param sysUser
      */
     void addUser(SysUser sysUser);
+
+    SysUser queryUserByUserName(String userName);
 }

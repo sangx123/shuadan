@@ -15,6 +15,7 @@ import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang.RandomStringUtils;
 import org.apache.shiro.crypto.hash.Sha256Hash;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -48,9 +49,7 @@ public class SysLoginController extends BaseResource {
 
 		SysUser user=null;
 		//用户名
-		SysUser sysUser1=new SysUser();
-		sysUser1.setUsername(sysUserLogin.getUsername());
-		user = sysUserService.findOne(sysUser1);
+		user = sysUserService.queryUserByUserName(sysUserLogin.getUsername());
 
 //		//手机号
 //		if(user==null){
@@ -89,6 +88,12 @@ public class SysLoginController extends BaseResource {
 	// @RequiresPermissions("sys:user:save")
 	public ApiResult register(@RequestBody SysUser sysUser){
 		int result=checkUser(sysUser);
+		if(sysUser.getUsername().isEmpty()){
+			return  fail(ApiExecStatus.INVALID_PARAM,"用户名不能为空！");
+		}
+		if(sysUser.getPassword().isEmpty()){
+			return  fail(ApiExecStatus.INVALID_PARAM,"密码不能为空！");
+		}
 		if(0!=result){
 			if(result==-1) {
 				return  fail(ApiExecStatus.INVALID_PARAM,"username已存在!");
@@ -157,7 +162,7 @@ public class SysLoginController extends BaseResource {
 	/**
 	 * 退出
 	 */
-	@PostMapping(value = "/sys/logout")
+	@GetMapping(value = "/logout")
 	@ApiOperation(value="用户退出")
 	public ApiResult logout(){
 		int userId=ShiroUtils.getUserId();

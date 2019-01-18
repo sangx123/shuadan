@@ -7,7 +7,10 @@ import com.sangxiang.dao.model.SysUser;
 import com.sangxiang.dao.model.Task;
 import com.sangxiang.dao.model.UserTask;
 
+import java.util.List;
+
 public interface UserTaskService extends BaseService<UserTask> {
     void createUserTask(Task task,SysUser user);
-    PageInfo<Task> getUserTask(int userid, int pageNum, int pageSize);
+    PageInfo<Task> getUserTask(int userid,int state,int pageNum, int pageSize);
+    List<Task> getUserTask(int userid, int status);
 }

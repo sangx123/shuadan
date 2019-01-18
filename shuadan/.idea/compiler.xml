@@ -19,6 +19,7 @@
       <module name="common" options="-parameters" />
       <module name="dao" options="-parameters" />
       <module name="entity" options="-parameters" />
+      <module name="shuadan" options="-parameters" />
     </option>
   </component>
 </project>
