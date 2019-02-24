@@ -5,7 +5,7 @@
 
     <!--设置系统日志目录-->
     <property name="APP_DIR" value="king-rest-api" />
-    <property name="LOG_PATH" value="/data/logs/restapi/" />
+    <!--<property name="LOG_PATH" value="/data/logs/restapi/" />-->
 
     <!-- 彩色日志 -->
     <!-- 彩色日志依赖的渲染类 -->

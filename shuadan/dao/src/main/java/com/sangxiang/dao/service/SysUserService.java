@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface SysUserService extends BaseService<SysUser> {
     SysUser queryUser(int userId);
+
     SysUser queryUserRole(int userId);
     /**
      * 创建用户
@@ -14,5 +15,6 @@ public interface SysUserService extends BaseService<SysUser> {
      */
     void addUser(SysUser sysUser);
 
-    SysUser queryUserByUserName(String userName);
+
+    SysUser authenticate(String mobile, String password, String pushToken);
 }

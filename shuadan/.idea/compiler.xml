@@ -10,6 +10,7 @@
         <module name="common" />
         <module name="dao" />
         <module name="entity" />
+        <module name="web" />
       </profile>
     </annotationProcessing>
   </component>
@@ -20,6 +21,7 @@
       <module name="dao" options="-parameters" />
       <module name="entity" options="-parameters" />
       <module name="shuadan" options="-parameters" />
+      <module name="web" options="-parameters" />
     </option>
   </component>
 </project>

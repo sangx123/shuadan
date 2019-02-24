@@ -3,7 +3,7 @@ package com.sangxiang.model.Login;
 public class HomeTaskParam {
     private Integer pageSize = 10;
     private Integer pageNumber = 1;
-    private Integer state = 0;
+    private Integer state = 1;
 
     public Integer getState() {
         return state;
