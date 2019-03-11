@@ -9,6 +9,7 @@
       <result column="state" property="state" jdbcType="INTEGER" />
       <result column="money" property="money" jdbcType="REAL" />
       <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
     <association property="role" javaType="com.sangxiang.dao.model.SysRole">
       <id column="r_id" property="id" jdbcType="INTEGER" />
       <result column="role" property="role" jdbcType="VARCHAR" />
@@ -24,5 +25,8 @@
 
     <select id="fetchOneByMobile" resultMap="BaseResultMap">
         select * from sys_user where mobile = #{mobile} limit 1
+    </select>
+    <select id="fetchOneByName" resultMap="BaseResultMap">
+        select * from sys_user where name = #{name} limit 1
     </select>
 </mapper>

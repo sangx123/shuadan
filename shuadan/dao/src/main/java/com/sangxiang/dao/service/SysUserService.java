@@ -16,5 +16,7 @@ public interface SysUserService extends BaseService<SysUser> {
     void addUser(SysUser sysUser);
 
 
-    SysUser authenticate(String mobile, String password, String pushToken);
+    SysUser authenticateMobile(String mobile, String password, String pushToken);
+
+    SysUser authenticateName(String name, String password, String pushToken);
 }
