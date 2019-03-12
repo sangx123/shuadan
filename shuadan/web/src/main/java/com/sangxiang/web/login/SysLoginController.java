@@ -49,7 +49,7 @@ public class SysLoginController extends BaseResource {
 
 		SysUser user=null;
 		//用户名
-		user = sysUserService.queryUserByUserName(sysUserLogin.getUsername());
+		//user = sysUserService.authenticateMobile(sysUserLogin.getUsername());
 
 //		//手机号
 //		if(user==null){
@@ -88,9 +88,9 @@ public class SysLoginController extends BaseResource {
 	// @RequiresPermissions("sys:user:save")
 	public ApiResult register(@RequestBody SysUser sysUser){
 		int result=checkUser(sysUser);
-		if(sysUser.getUsername().isEmpty()){
-			return  fail(ApiExecStatus.INVALID_PARAM,"用户名不能为空！");
-		}
+//		if(sysUser.getUsername().isEmpty()){
+//			return  fail(ApiExecStatus.INVALID_PARAM,"用户名不能为空！");
+//		}
 		if(sysUser.getPassword().isEmpty()){
 			return  fail(ApiExecStatus.INVALID_PARAM,"密码不能为空！");
 		}
@@ -112,7 +112,7 @@ public class SysLoginController extends BaseResource {
 		sysUser.setSalt(salt);
 		//用户状态：0-启用；1-停用；2-锁定；
 		sysUser.setState(0);
-		sysUser.setUsername(sysUser.getUsername().trim());
+		//sysUser.setUsername(sysUser.getUsername().trim());
 		sysUserService.addUser(sysUser);
 		return success("success");
 	}
@@ -120,18 +120,18 @@ public class SysLoginController extends BaseResource {
 	private int checkUser(SysUser sysUser){
 		int result=0;
 		Example example=new Example(SysUser.class);
-		if(StringUtil.isNotEmpty(sysUser.getUsername())){
-			example.clear();
-			Example.Criteria criteria=example.createCriteria();
-			if(null!=sysUser.getId()) {
-				criteria.andNotEqualTo("id",sysUser.getId());
-			}
-			criteria.andEqualTo("username",sysUser.getUsername());
-			List<SysUser> list=sysUserService.selectByExample(example);
-			if(null!=list && list.size()>0) {
-				result=-1;
-			}
-		}
+//		if(StringUtil.isNotEmpty(sysUser.getUsername())){
+//			example.clear();
+//			Example.Criteria criteria=example.createCriteria();
+//			if(null!=sysUser.getId()) {
+//				criteria.andNotEqualTo("id",sysUser.getId());
+//			}
+//			criteria.andEqualTo("username",sysUser.getUsername());
+//			List<SysUser> list=sysUserService.selectByExample(example);
+//			if(null!=list && list.size()>0) {
+//				result=-1;
+//			}
+//		}
 //		if(StringUtil.isNotEmpty(sysUser.getMobile())){
 //			example.clear();
 //			Example.Criteria criteria=example.createCriteria();
