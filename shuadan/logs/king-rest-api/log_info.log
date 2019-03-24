@@ -1899,3 +1899,31 @@ Caused by: java.net.SocketTimeoutException: Read timed out
 2019-03-24 17:04:30.330 [http-nio-8081-exec-6] INFO  com.sangxiang.app.utils.AppResult - 返回参数[{"version":1000,"cmd":"cmd","pageType":"1","respCode":"500","respMsg":"操作失败：系统繁忙，请稍后再试！","pageSize":10,"pageNumber":1,"pages":1,"total":1,"sign":"emucoo","data":null,"firstPage":false,"lastPage":false,"isFirstPage":false,"isLastPage":false}]
 2019-03-24 17:07:33.481 [http-nio-8081-exec-8] INFO  com.sangxiang.app.utils.AppResult - 返回参数[{"version":1000,"cmd":"cmd","pageType":"1","respCode":"000","respMsg":"操作成功","pageSize":10,"pageNumber":1,"pages":1,"total":1,"sign":"emucoo","data":{"userToken":"KJa1gSidXNw=","id":null,"username":null,"name":null,"password":null,"salt":null,"state":0,"mobile":null,"email":null,"createTime":null,"role":null,"money":0.0},"firstPage":false,"lastPage":false,"isFirstPage":false,"isLastPage":false}]
 2019-03-24 17:08:00.728 [http-nio-8081-exec-9] INFO  com.sangxiang.app.utils.AppResult - 返回参数[{"version":1000,"cmd":"cmd","pageType":"1","respCode":"000","respMsg":"操作成功","pageSize":10,"pageNumber":1,"pages":1,"total":1,"sign":"emucoo","data":{"userToken":"KJa1gSidXNw=","id":null,"username":null,"name":null,"password":null,"salt":null,"state":0,"mobile":null,"email":null,"createTime":null,"role":null,"money":0.0},"firstPage":false,"lastPage":false,"isFirstPage":false,"isLastPage":false}]
+2019-03-24 22:25:07.572 [main] INFO  com.sangxiang.app.App - Starting App on sangxiangMBP with PID 27299 (/Users/sangxiang/Desktop/web-server/shuadan/app/target/classes started by sangxiang in /Users/sangxiang/Desktop/web-server/shuadan)
+2019-03-24 22:25:07.576 [main] INFO  com.sangxiang.app.App - The following profiles are active: dev
+2019-03-24 22:25:09.320 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-24 22:25:09.327 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-24 22:25:09.401 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2019-03-24 22:25:09.995 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncConfig' of type [com.sangxiang.app.config.AsyncConfig$$EnhancerBySpringCGLIB$$ddb977af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-24 22:25:10.109 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e751c732] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-24 22:25:11.333 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2019-03-24 22:25:11.357 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2019-03-24 22:25:11.370 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-03-24 22:25:11.371 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-03-24 22:25:11.387 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sangxiang/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-03-24 22:25:11.633 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-03-24 22:25:11.634 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3883 ms
+2019-03-24 22:25:11.705 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-24 22:25:11.706 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-24 22:25:11.706 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
+2019-03-24 22:25:11.706 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-24 22:25:11.706 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'myHttpLogFilter' to urls: [/*]
+2019-03-24 22:25:11.706 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2019-03-24 22:25:14.146 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-24 22:25:16.121 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2019-03-24 22:25:16.719 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2019-03-24 22:25:16.752 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-03-24 22:25:16.800 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2019-03-24 22:25:16.813 [main] INFO  com.sangxiang.app.App - Started App in 10.698 seconds (JVM running for 11.841)
+2019-03-24 22:25:20.308 [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
+2019-03-24 22:25:20.313 [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

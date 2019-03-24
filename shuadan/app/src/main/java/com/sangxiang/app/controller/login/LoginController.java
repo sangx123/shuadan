@@ -50,10 +50,6 @@ public class LoginController extends AppBaseController {
             checkParam(mobile, "缺少账号");
             checkParam(password, "缺少密码");
             loginInfo = sysUserService.authenticateName(mobile, password, pushToken);
-
-        }
-        if(loginInfo == null) {
-            loginInfo = sysUserService.authenticateMobile(mobile, password, pushToken);
         }
         if(loginInfo==null){
             return  fail(AppExecStatus.FAIL,"用户名或手机号不存在!");
