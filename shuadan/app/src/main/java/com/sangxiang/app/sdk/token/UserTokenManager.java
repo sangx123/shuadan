@@ -1,4 +1,5 @@
 package com.sangxiang.app.sdk.token;
+import com.sangxiang.app.config.JedisUtils;
 import com.sangxiang.app.utils.ISystem;
 import com.sangxiang.app.utils.SpringContextUtil;
 import com.sangxiang.dao.model.SysUser;
@@ -9,6 +10,7 @@ import com.sangxiang.util.StringUtil;
 import com.sangxiang.util.UuidUtil;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.context.ApplicationContext;
+import redis.clients.jedis.Jedis;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -83,7 +85,8 @@ public class UserTokenManager {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        redisClient.set(ISystem.IUSER.USER_TOKEN + userId,userToken,ISystem.IUSER.USER_TOKEN_EXPIRATION_TIME);
+		redisClient.set(ISystem.IUSER.USER_TOKEN + userId,userToken,ISystem.IUSER.USER_TOKEN_EXPIRATION_TIME);
+
         return userToken;
     }
 

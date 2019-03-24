@@ -47,8 +47,8 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
         // excludePathPatterns 用户排除拦截
 //        registry.addInterceptor(new AdminInterceptor()).addPathPatterns("/admin/**").excludePathPatterns("/admin/login");
         //配置防止表单重复提交拦截器
-       // registry.addInterceptor(new FormTokenInterceptor()).addPathPatterns("/**");
-        registry.addInterceptor(new ApiInterceptor()).addPathPatterns("/api/**").excludePathPatterns("/api/index/register").excludePathPatterns("/api/index/login").excludePathPatterns("/api/index/resetPwd");
+       // registry.addInterceptor(new FormTokenInterceptor()).addPathPatterns("/**");resetPassword
+        registry.addInterceptor(new ApiInterceptor()).addPathPatterns("/api/**").excludePathPatterns("/api/index/resetPassword").excludePathPatterns("/api/index/register").excludePathPatterns("/api/index/login").excludePathPatterns("/api/index/resetPwd");
         super.addInterceptors(registry);
 
     }

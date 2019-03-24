@@ -1,4 +1,5 @@
 package com.sangxiang.app.utils;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.github.pagehelper.PageInfo;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -47,6 +48,7 @@ public class ParamVo<E> {
 	private Long total = 1L;
 
 	@ApiModelProperty(name = "isFirstPage", value = "是否是第一页", example = "true")
+	@JsonProperty(value = "isFirstPage")
 	private boolean isFirstPage;
 
 	public boolean isFirstPage() {
@@ -66,6 +68,7 @@ public class ParamVo<E> {
 	}
 
 	@ApiModelProperty(name = "isLastPage", value = "是否是最后一页", example = "true")
+	@JsonProperty(value = "isLastPage")
 	private boolean isLastPage;
 	
 	@ApiModelProperty(name="sign",value="签名", example="@#42334i！@34")
@@ -158,7 +161,7 @@ public class ParamVo<E> {
 		{
 			PageInfo pageInfo = (PageInfo)data;
 			this.pageSize = pageInfo.getPageSize();
-			this.pageNumber = pageInfo.getPages();
+			this.pageNumber = pageInfo.getPageNum();
 			this.total=pageInfo.getTotal();
 			this.data = (E)pageInfo.getList();
 			this.isFirstPage=pageInfo.isIsFirstPage();

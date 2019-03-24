@@ -25,6 +25,8 @@ public class SysUser extends BaseEntity {
 
     private Date createTime;
 
+    private String name;
+
     public Integer getId() {
         return id;
     }
@@ -91,5 +93,13 @@ public class SysUser extends BaseEntity {
 
     public void setRole(SysRole role) {
         this.role = role;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

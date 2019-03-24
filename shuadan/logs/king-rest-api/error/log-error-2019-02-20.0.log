@@ -1,0 +1,18 @@
+2019-02-20 14:43:32.136 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field mapper in com.sangxiang.base.service.impl.BaseServiceImpl required a bean of type 'com.sangxiang.base.mapper.MyMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.sangxiang.base.mapper.MyMapper' in your configuration.
+

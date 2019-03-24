@@ -32,11 +32,30 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUser> implements SysU
 
 
     @Override
-    public SysUser authenticate(String mobile, String password, String pushToken) {
+    public SysUser authenticateMobile(String mobile, String password, String pushToken) {
         SysUser user = null;
         if (RegexMatcher.isPhoneNumber(mobile)) {
             user = sysUserMapper.fetchOneByMobile(mobile);
         }
+
+        if (user == null) {
+            return null;
+        }
+
+        if (0 != user.getState()) {
+            return null;
+        }
+
+        if (!StringUtils.equalsIgnoreCase(user.getPassword(), new Sha256Hash(password, user.getSalt()).toHex())) {
+            return null;
+        }
+
+        return user;
+    }
+
+    @Override
+    public SysUser authenticateName(String name, String password, String pushToken) {
+        SysUser user = sysUserMapper.fetchOneByName(name);
 
         if (user == null) {
             return null;

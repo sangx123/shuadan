@@ -5,13 +5,13 @@ server:
 spring:
   datasource:
      driver-class-name: com.mysql.cj.jdbc.Driver
-     url: jdbc:mysql://127.0.0.1:3306/task_sys?characterEncoding=UTF-8&serverTimezone=CTT
+     url: jdbc:mysql://188.131.235.188:3306/task_sys?characterEncoding=UTF-8&serverTimezone=CTT
      username: root
      password: sx890828
 
   redis:
     cluster:
-      nodes: 127.0.0.1:7000,127.0.0.1:7001,127.0.0.1:7002,127.0.0.1:7003,127.0.0.1:7004,127.0.0.1:7005
+      nodes: 188.131.235.188:7000,188.131.235.188:7001,188.131.235.188:7002,188.131.235.188:7003,188.131.235.188:7004,188.131.235.188:7005
     password:
 
 #mybatis的配置
