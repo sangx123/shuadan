@@ -1,0 +1,5 @@
+2019-03-10 11:50:20.179 [http-nio-8081-exec-1] INFO  com.sangxiang.app.utils.AppResult - 返回参数[{"version":1000,"cmd":"cmd","pageType":"1","respCode":"000","respMsg":"操作成功","pageSize":10,"pageNumber":1,"pages":1,"total":1,"sign":"emucoo","data":{"userToken":"HjHm+d2yq54=","id":null,"username":null,"name":null,"password":null,"salt":null,"state":0,"mobile":null,"email":null,"createTime":null,"role":null,"money":0.0},"firstPage":false,"lastPage":false,"isFirstPage":false,"isLastPage":false}]
+2019-03-10 22:42:58.325 [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
+2019-03-10 22:42:58.367 [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-10 22:42:58.385 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-03-10 22:42:58.423 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

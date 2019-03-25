@@ -40,13 +40,16 @@ public class LoginController extends AppBaseController {
         String pushToken = null!=data.getPushToken()?data.getPushToken():null;
         String mobile = data.getMobile();
         String password = data.getPassword();
+        SysUser loginInfo=null;
+        if(data.getAuthCode()!=null&&!data.getAuthCode().isEmpty()){
+            //验证码登录
+            loginInfo= sysUserMapper.fetchOneByMobile(mobile);
 
-        checkParam(mobile, "缺少账号");
-        checkParam(password, "缺少密码");
-
-        SysUser loginInfo = sysUserService.authenticateName(mobile, password, pushToken);
-        if(loginInfo == null) {
-            loginInfo = sysUserService.authenticateMobile(mobile, password, pushToken);
+        }else {
+            //用户名密码登录
+            checkParam(mobile, "缺少账号");
+            checkParam(password, "缺少密码");
+            loginInfo = sysUserService.authenticateName(mobile, password, pushToken);
         }
         if(loginInfo==null){
             return  fail(AppExecStatus.FAIL,"用户名或手机号不存在!");
@@ -56,6 +59,7 @@ public class LoginController extends AppBaseController {
         UserLoginInfo userLoginInfo=new UserLoginInfo();
         userLoginInfo.setUserToken(userToken);
         return success(userLoginInfo);
+
     }
 
     /**

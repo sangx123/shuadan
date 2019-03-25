@@ -49,7 +49,7 @@ public class SysLoginController extends BaseResource {
 
 		SysUser user=null;
 		//用户名
-		//user = sysUserService.authenticateMobile(sysUserLogin.getUsername());
+		//user = sysUserService.queryUserByUserName(sysUserLogin.getUsername());
 
 //		//手机号
 //		if(user==null){

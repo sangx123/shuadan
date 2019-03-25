@@ -1,0 +1,21 @@
+2019-03-11 23:35:28.523 [main] INFO  com.sangxiang.app.App - Starting App on sangxiangMBP with PID 44472 (/Users/sangxiang/Desktop/web-server/shuadan/app/target/classes started by sangxiang in /Users/sangxiang/Desktop/web-server/shuadan)
+2019-03-11 23:35:28.594 [main] INFO  com.sangxiang.app.App - The following profiles are active: dev
+2019-03-11 23:35:31.852 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-11 23:35:31.860 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-11 23:35:32.014 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2019-03-11 23:35:32.896 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncConfig' of type [com.sangxiang.app.config.AsyncConfig$$EnhancerBySpringCGLIB$$956b5741] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-11 23:35:33.191 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9f03a6c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-11 23:35:34.490 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2019-03-11 23:35:34.553 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2019-03-11 23:35:34.594 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-03-11 23:35:34.596 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-03-11 23:35:34.673 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sangxiang/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-03-11 23:35:35.090 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-03-11 23:35:35.091 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6243 ms
+2019-03-11 23:35:35.295 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-11 23:35:35.296 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-11 23:35:35.296 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
+2019-03-11 23:35:35.296 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-11 23:35:35.296 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'myHttpLogFilter' to urls: [/*]
+2019-03-11 23:35:35.297 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2019-03-11 23:35:37.581 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]

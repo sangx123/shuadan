@@ -7,6 +7,8 @@ public class UserLoginParam {
     private String pushToken;
     private String mobile;
 
+    private String authCode;
+
     public String getPushToken() {
         return pushToken;
     }
@@ -32,4 +34,12 @@ public class UserLoginParam {
     }
 
     private String password;
+
+    public String getAuthCode() {
+        return authCode;
+    }
+
+    public void setAuthCode(String authCode) {
+        this.authCode = authCode;
+    }
 }
