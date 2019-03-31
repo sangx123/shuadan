@@ -6,5 +6,14 @@ spring:
     # 属性为NULL 不序列化
     default-property-inclusion: non_null
 
+
+qiniu:
+  accessKey: wJeRHTcGicloBEUjyNYVYa0W9ZQZvI7j9dTd5FFl
+  secretKey: ZCu_Pn0IJ3z2rVB7Z-fn1YaJMUGqG1ab-ubD6pX9
+  #baseUrl: http://img.emucoo.net
+  baseUrl: pp8a46bxe.bkt.clouddn.com
+  bucket: sangss
+  expires: 3600
+
 token:
   expire: 12
