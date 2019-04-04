@@ -20,13 +20,13 @@ public class RedisClusterConfig {
     private String redisNodes;
 
     @Value("${spring.redis.cluster.maxIdle:150}")
-    private int redisMaxIdle = 150;
+    private int redisMaxIdle = 1500;
 
     @Value("${spring.redis.cluster.timeout:5000}")
     private int redisTimeout = 5000;
 
     @Value("${spring.redis.cluster.maxTotal:300}")
-    private int redisMaxTotal = 300;
+    private int redisMaxTotal = 3000;
 
     @Value("${spring.redis.password}")
     private String password;
@@ -46,6 +46,6 @@ public class RedisClusterConfig {
         if (StringUtils.isBlank(password)) {
             password = null;
         }
-        return new JedisCluster(nds, redisTimeout, 1000, 1, password, jedisPoolConfig);
+        return new JedisCluster(nds, redisTimeout, 5000, 1, password, jedisPoolConfig);
     }
 }

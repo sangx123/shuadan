@@ -81,6 +81,7 @@ public class LoginController extends AppBaseController {
             return  fail(AppExecStatus.FAIL,"该手机号不存在!");
         }
         String salt = RandomStringUtils.randomAlphanumeric(20);
+        //String salt="WjGGv0Mo2ozFbc5y4Olb";
         user.setPassword(new Sha256Hash(password,salt).toHex());
         user.setSalt(salt);
         sysUserMapper.updateByPrimaryKey(user);
