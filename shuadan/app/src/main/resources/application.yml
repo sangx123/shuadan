@@ -20,6 +20,7 @@ token:
 upload :
   imagePath:  C:/Users/sangxiang/Downloads/nginx-1.15.10/nginx-1.15.10/html/images/
   #imagePath: /usr/local/nginx/html/images/
+  imageURL: 188.131.235.188/images/
 
 
 

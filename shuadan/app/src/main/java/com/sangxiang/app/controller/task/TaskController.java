@@ -39,16 +39,13 @@ public class TaskController extends AppBaseController {
     @Value("${upload.imagePath}")
     private String imagePath;
 
-    @PostMapping("/createTask")
-    public AppResult<String> createTask(@RequestParam(value = "imageList") MultipartFile files[], String content) {
-        List<String> imageList = new ArrayList<String>();
-        List<String> splitTextList= StringUtils.cutStringByLineTag(content);
-        for (String item :splitTextList){
-            if(item.contains("img")){
-                splitTextList1.add(StringUtils.getImgSrc(item));
-            }
-        }
+    // token 过期时间， 默认2小时后过期
+    @Value("${upload.imageURL}")
+    private String imageURL;
 
+    @PostMapping("/createTask")
+    public AppResult<String> createTask(@RequestParam(value = "imageList") MultipartFile files[], String content,String title ,String benJing,String jiangLi,String peopleNum) {
+        List<String> imageUrlList = new ArrayList<String>();
         File uploadDirectory = new File(imagePath);
         if (uploadDirectory.exists()) {
             if (!uploadDirectory.isDirectory()) {
@@ -65,11 +62,13 @@ public class TaskController extends AppBaseController {
                     String fileName = file.getOriginalFilename();
                     //判断是否有文件且是否为图片文件
                     if (fileName != null && !"".equalsIgnoreCase(fileName.trim()) && isImageFile(fileName)) {
-                        String filePath=imagePath + "/" + currentDate() + getFileType(fileName);
+                        String imageName=currentDate() + getFileType(fileName);
+                        String filePath=imagePath + "/" + imageName;
                         //创建输出文件对象
                         File outFile = new File(filePath);
                         //拷贝文件到输出文件对象
                         FileUtils.copyInputStreamToFile(file.getInputStream(), outFile);
+                        imageUrlList.add(imageURL+imageName);
                     }
                 }
             } catch (Exception e) {
@@ -85,6 +84,7 @@ public class TaskController extends AppBaseController {
                 }
             }
         }
+        content=StringUtils.replceImgSrc(content,imageUrlList);
         return success("upload successful");
     }
     private Boolean isImageFile(String fileName) {
