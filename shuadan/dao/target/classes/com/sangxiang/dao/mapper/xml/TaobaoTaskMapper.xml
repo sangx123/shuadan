@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sangxiang.dao.mapper.TaobaoTaskMapper" >
+  <resultMap id="BaseResultMap" type="com.sangxiang.dao.model.TaobaoTask" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="userid" property="userid" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="sousuoguanjianzi" property="sousuoguanjianzi" jdbcType="VARCHAR" />
+    <result column="zhangguiming" property="zhangguiming" jdbcType="VARCHAR" />
+    <result column="shangpinlianjie" property="shangpinlianjie" jdbcType="VARCHAR" />
+    <result column="shangpinjiage" property="shangpinjiage" jdbcType="REAL" />
+    <result column="shuadanshuliang" property="shuadanshuliang" jdbcType="INTEGER" />
+    <result column="shuadanyongjin" property="shuadanyongjin" jdbcType="REAL" />
+    <result column="renqunbiaoqian" property="renqunbiaoqian" jdbcType="VARCHAR" />
+    <result column="jialiao" property="jialiao" jdbcType="BIT" />
+    <result column="liulanqita" property="liulanqita" jdbcType="BIT" />
+    <result column="tingliushichang" property="tingliushichang" jdbcType="BIT" />
+    <result column="daituhaoping" property="daituhaoping" jdbcType="BIT" />
+    <result column="huobisanjia" property="huobisanjia" jdbcType="BIT" />
+    <result column="zhenshiqianshou" property="zhenshiqianshou" jdbcType="BIT" />
+    <result column="total_price" property="totalPrice" jdbcType="REAL" />
+    <result column="status" property="status" jdbcType="BIT" />
+  </resultMap>
+</mapper>

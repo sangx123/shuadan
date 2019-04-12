@@ -9,7 +9,10 @@ import com.sangxiang.app.utils.AppResult;
 import com.sangxiang.app.utils.StringUtils;
 import com.sangxiang.dao.mapper.SysUserMapper;
 import com.sangxiang.dao.model.SysUser;
+import com.sangxiang.dao.model.Task;
 import com.sangxiang.dao.service.SysUserService;
+import com.sangxiang.dao.service.TaskService;
+import com.sangxiang.dao.service.UserTaskService;
 import com.sangxiang.util.StringUtil;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.io.FileUtils;
@@ -43,8 +46,21 @@ public class TaskController extends AppBaseController {
     @Value("${upload.imageURL}")
     private String imageURL;
 
+    @Autowired
+    TaskService taskService;
+    /**
+     * 创建任务
+     * @param files
+     * @param content
+     * @param title
+     * @param benJing
+     * @param jiangLi
+     * @param peopleNum
+     * @return
+     */
     @PostMapping("/createTask")
-    public AppResult<String> createTask(@RequestParam(value = "imageList") MultipartFile files[], String content,String title ,String benJing,String jiangLi,String peopleNum) {
+    public AppResult<String> createTask(@RequestHeader("userToken") String userToken,@RequestParam(value = "imageList") MultipartFile files[], String content,String title ,String benJing,String jiangLi,String peopleNum,String type) {
+        int userId = UserTokenManager.getInstance().getUserIdFromToken(userToken).intValue();
         List<String> imageUrlList = new ArrayList<String>();
         File uploadDirectory = new File(imagePath);
         if (uploadDirectory.exists()) {
@@ -85,7 +101,20 @@ public class TaskController extends AppBaseController {
             }
         }
         content=StringUtils.replceImgSrc(content,imageUrlList);
-        return success("upload successful");
+
+        Task task=new Task();
+        task.setTitle(title);
+        task.setContent(content);
+        task.setCreateTime(new Date());
+        task.setUserid(userId);
+        task.setGoodsPrice(Float.parseFloat(benJing));
+        task.setWorkerPrice(Float.parseFloat(jiangLi));
+        task.setWorkerNum(Integer.valueOf(peopleNum));
+        task.setTotalPrice((task.getGoodsPrice()+task.getWorkerPrice())*task.getWorkerNum());
+        task.setType(type);
+        task.setState(0);
+        taskService.createTask(task);
+        return success("任务创建成功");
     }
     private Boolean isImageFile(String fileName) {
         String[] img_type = new String[]{".jpg", ".jpeg", ".png", ".gif", ".bmp"};
@@ -124,131 +153,4 @@ public class TaskController extends AppBaseController {
         }
         return result;
     }
-//    @Autowired
-//    private SysUserService sysUserService;
-//
-//    @Autowired
-//    private SysUserMapper sysUserMapper;
-//    /**
-//     * 用户登录
-//     */
-//    @PostMapping("/login")
-//    public AppResult<UserLoginInfo> login(@RequestBody UserLoginParam data) {
-//        String pushToken = null!=data.getPushToken()?data.getPushToken():null;
-//        String mobile = data.getMobile();
-//        String password = data.getPassword();
-//        SysUser loginInfo=null;
-//        if(data.getAuthCode()!=null&&!data.getAuthCode().isEmpty()){
-//            //验证码登录
-//            loginInfo= sysUserMapper.fetchOneByMobile(mobile);
-//
-//        }else {
-//            //用户名密码登录
-//            checkParam(mobile, "缺少账号");
-//            checkParam(password, "缺少密码");
-//            loginInfo = sysUserService.authenticateName(mobile, password, pushToken);
-//        }
-//        if(loginInfo==null){
-//            return  fail(AppExecStatus.FAIL,"用户名或手机号不存在!");
-//        }
-//
-//        String userToken = UserTokenManager.getInstance().saveUserToken(loginInfo.getId().longValue());
-//        UserLoginInfo userLoginInfo=new UserLoginInfo();
-//        userLoginInfo.setUserToken(userToken);
-//        return success(userLoginInfo);
-//
-//    }
-//
-//    /**
-//     * 用户重置密码
-//     * @param data
-//     * @return
-//     */
-//    @PostMapping("/resetPassword")
-//    public AppResult resetPassword(@RequestBody UserLoginParam data) {
-//        SysUser user=null;
-//        String pushToken = null!=data.getPushToken()?data.getPushToken():null;
-//        String mobile = data.getMobile();
-//        String password = data.getPassword();
-//        checkParam(mobile, "缺少账号");
-//        checkParam(password, "缺少密码");
-//
-//        user= sysUserMapper.fetchOneByMobile(data.getMobile());
-//        if(user==null){
-//            return  fail(AppExecStatus.FAIL,"该手机号不存在!");
-//        }
-//        String salt = RandomStringUtils.randomAlphanumeric(20);
-//        //String salt="WjGGv0Mo2ozFbc5y4Olb";
-//        user.setPassword(new Sha256Hash(password,salt).toHex());
-//        user.setSalt(salt);
-//        sysUserMapper.updateByPrimaryKey(user);
-//        return success("success");
-//    }
-//
-//
-//    /**
-//     * 创建用户
-//     */
-//    @ApiOperation(value="注册用户")
-//    @PostMapping("/register")
-//    // @RequiresPermissions("sys:user:save")
-//    public AppResult<UserLoginInfo> register(@RequestBody SysUser sysUser){
-//        int result=checkUser(sysUser);
-//        if(0!=result){
-//            if(result==-1) {
-//                return  fail(AppExecStatus.FAIL,"用户名已存在!");
-//            }
-//			else if(result==-2) {
-//				return  fail(AppExecStatus.FAIL,"手机号已存在!");
-//			}
-//        }
-//        sysUser.setCreateTime(new Date());
-//        //sha256加密
-//        String salt = RandomStringUtils.randomAlphanumeric(20);
-//        sysUser.setPassword(new Sha256Hash(sysUser.getPassword(),salt).toHex());
-//        sysUser.setSalt(salt);
-//        //用户状态：0-启用；1-停用；2-锁定；
-//        sysUser.setState(0);
-//        sysUser.setName(sysUser.getName());
-//        sysUser.setMobile(sysUser.getMobile());
-//        sysUser.setMoney(0f);
-//        sysUserService.addUser(sysUser);
-//        String userToken = UserTokenManager.getInstance().saveUserToken(sysUser.getId().longValue());
-//        UserLoginInfo userLoginInfo=new UserLoginInfo();
-//        userLoginInfo.setUserToken(userToken);
-//        return success(userLoginInfo);
-//    }
-//
-//    private int checkUser(SysUser sysUser){
-//        int result=0;
-//        Example example=new Example(SysUser.class);
-//        if(StringUtil.isNotEmpty(sysUser.getName())){
-//            example.clear();
-//            Example.Criteria criteria=example.createCriteria();
-//            if(null!=sysUser.getId()) {
-//                criteria.andNotEqualTo("id",sysUser.getId());
-//            }
-//            criteria.andEqualTo("name",sysUser.getName());
-//            List<SysUser> list=sysUserService.selectByExample(example);
-//            if(null!=list && list.size()>0) {
-//                result=-1;
-//                return  result;
-//            }
-//        }
-//		if(StringUtil.isNotEmpty(sysUser.getMobile())){
-//			example.clear();
-//			Example.Criteria criteria=example.createCriteria();
-//			if(null!=sysUser.getId()) {
-//				criteria.andNotEqualTo("id",sysUser.getId());
-//			}
-//			criteria.andEqualTo("mobile",sysUser.getMobile());
-//			List<SysUser> list=sysUserService.selectByExample(example);
-//			if(null!=list && list.size()>0) {
-//				result=-2;
-//                return  result;
-//			}
-//		}
-//        return  result;
-//    }
-
 }

@@ -1,0 +1,26 @@
+spring:
+ #激活哪一个环境的配置文件
+  profiles:
+    active: dev
+  jackson:
+    # 属性为NULL 不序列化
+    default-property-inclusion: non_null
+qiniu:
+  accessKey: wJeRHTcGicloBEUjyNYVYa0W9ZQZvI7j9dTd5FFl
+  secretKey: ZCu_Pn0IJ3z2rVB7Z-fn1YaJMUGqG1ab-ubD6pX9
+  #baseUrl: http://img.emucoo.net
+  baseUrl: pp8a46bxe.bkt.clouddn.com
+  bucket: sangss
+  expires: 3600
+
+token:
+  expire: 12
+# 自定义文件上传路径
+#upload-image-path : c:/images/
+upload :
+  imagePath:  C:/Users/sangxiang/Downloads/nginx-1.15.10/nginx-1.15.10/html/images/
+  #imagePath: /usr/local/nginx/html/images/
+  imageURL: 188.131.235.188/images/
+
+
+

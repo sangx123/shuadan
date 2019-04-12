@@ -19,6 +19,10 @@ public class Task extends BaseEntity {
 
     private String title;
 
+    private String content;
+
+    private String type;
+
     private Float goodsPrice;
 
     private Integer workerNum;
@@ -29,7 +33,13 @@ public class Task extends BaseEntity {
 
     private Integer state;
 
+    public Integer getId() {
+        return id;
+    }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public Integer getUserid() {
         return userid;
@@ -53,6 +63,22 @@ public class Task extends BaseEntity {
 
     public void setTitle(String title) {
         this.title = title == null ? null : title.trim();
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content == null ? null : content.trim();
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public Float getGoodsPrice() {
@@ -93,13 +119,5 @@ public class Task extends BaseEntity {
 
     public void setState(Integer state) {
         this.state = state;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 }

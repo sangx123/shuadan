@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sangxiang.dao.mapper.SysUserMapper" >
+  <resultMap id="BaseResultMap" type="com.sangxiang.dao.model.SysUser" >
+      <id column="id" property="id" jdbcType="INTEGER" />
+      <result column="mobile" property="mobile" jdbcType="VARCHAR" />
+      <result column="password" property="password" jdbcType="VARCHAR" />
+      <result column="salt" property="salt" jdbcType="VARCHAR" />
+      <result column="state" property="state" jdbcType="INTEGER" />
+      <result column="money" property="money" jdbcType="REAL" />
+      <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+    <association property="role" javaType="com.sangxiang.dao.model.SysRole">
+      <id column="r_id" property="id" jdbcType="INTEGER" />
+      <result column="role" property="role" jdbcType="VARCHAR" />
+      <result column="r_description" property="description" jdbcType="VARCHAR" />
+    </association>
+  </resultMap>
+  <select id="queryUserRole" parameterType="int" resultType="com.sangxiang.dao.model.SysUser">
+          SELECT t1.*,t3.id r_id,t3.role,t3.description
+          from  sys_user t1
+          inner join sys_user_role_relationship t2 on t1.id=t2.user_id
+          left join sys_role t3 on t3.id=t2.role_id where t1.id=#{value}
+    </select>
+
+    <select id="fetchOneByMobile" resultMap="BaseResultMap">
+        select * from sys_user where mobile = #{mobile} limit 1
+    </select>
+    <select id="fetchOneByName" resultMap="BaseResultMap">
+        select * from sys_user where name = #{name} limit 1
+    </select>
+</mapper>

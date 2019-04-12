@@ -24,7 +24,6 @@ public class TaskServiceImpl extends BaseServiceImpl<Task> implements TaskServic
     @Override
     public int createTask(Task task) {
          taskMapper.insertUseGeneratedKeys(task);
-
          return task.getId();
     }
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sangxiang.dao.mapper.UserAlipayMapper" >
+  <resultMap id="BaseResultMap" type="com.sangxiang.dao.model.UserAlipay">
+    <id column="tradeNo" jdbcType="VARCHAR" property="tradeno" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="userid" jdbcType="VARCHAR" property="userid" />
+    <result column="amount" jdbcType="VARCHAR" property="amount" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="sig" jdbcType="VARCHAR" property="sig" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="create_time" jdbcType="VARCHAR" property="createTime" />
+    <result column="use_status" jdbcType="BIT" property="useStatus" />
+    <result column="use_userid" jdbcType="INTEGER" property="useUserid" />
+    <result column="use_time" jdbcType="TIMESTAMP" property="useTime" />
+  </resultMap>
+</mapper>
