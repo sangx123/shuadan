@@ -1,62 +1,68 @@
-2019-04-11 09:12:12.114 [main] INFO  com.sangxiang.app.App - Starting App on DESKTOP-OFO52A3 with PID 9592 (C:\Users\sangxiang\Documents\shuadan\shuadan\app\target\classes started by sangxiang in C:\Users\sangxiang\Documents\shuadan\shuadan)
-2019-04-11 09:12:12.130 [main] INFO  com.sangxiang.app.App - The following profiles are active: dev
-2019-04-11 09:12:16.444 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-04-11 09:12:16.456 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-04-11 09:12:16.715 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41ms. Found 0 repository interfaces.
-2019-04-11 09:12:17.721 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncConfig' of type [com.sangxiang.app.config.AsyncConfig$$EnhancerBySpringCGLIB$$a9960481] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-04-11 09:12:17.988 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b32e5404] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-04-11 09:12:20.099 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
-2019-04-11 09:12:20.182 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
-2019-04-11 09:12:20.212 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2019-04-11 09:12:20.212 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
-2019-04-11 09:12:20.261 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Java\jdk1.8.0_201\jre\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Android\Android Studio\gradle\gradle-4.6\bin;C:\Program Files\PuTTY\;C:\Program Files\Redis\;C:\Users\sangxiang\AppData\Local\Microsoft\WindowsApps;;C:\Users\sangxiang\AppData\Local\Programs\Fiddler;.]
-2019-04-11 09:12:20.796 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-04-11 09:12:20.797 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8216 ms
-2019-04-11 09:12:21.030 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-2019-04-11 09:12:21.030 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2019-04-11 09:12:21.030 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
-2019-04-11 09:12:21.030 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-2019-04-11 09:12:21.030 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'myHttpLogFilter' to urls: [/*]
-2019-04-11 09:12:21.031 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
-2019-04-11 09:12:24.415 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
-2019-04-11 09:12:29.254 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-11 09:12:30.691 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
-2019-04-11 09:12:30.702 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
-2019-04-11 09:12:30.731 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
-2019-04-11 09:12:30.734 [main] INFO  com.sangxiang.app.App - Started App in 20.752 seconds (JVM running for 24.192)
-2019-04-11 09:34:26.602 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-04-11 09:34:26.603 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2019-04-11 09:34:26.612 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
-2019-04-11 09:35:26.272 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2019-04-11 09:35:27.117 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2019-04-11 09:35:27.489 [http-nio-8081-exec-1] INFO  com.sangxiang.app.utils.AppResult - 返回参数[{"version":1000,"cmd":"cmd","pageType":"1","respCode":"000","respMsg":"操作成功","pageSize":10,"pageNumber":1,"pages":1,"total":1,"sign":"emucoo","data":"任务创建成功","firstPage":false,"lastPage":false,"isFirstPage":false,"isLastPage":false}]
-2019-04-11 09:42:11.083 [Thread-45] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-11 09:42:11.088 [Thread-45] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2019-04-11 09:42:11.117 [Thread-45] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2019-04-11 09:42:11.356 [Thread-45] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
-2019-04-11 09:42:19.956 [main] INFO  com.sangxiang.app.App - Starting App on DESKTOP-OFO52A3 with PID 1036 (C:\Users\sangxiang\Documents\shuadan\shuadan\app\target\classes started by sangxiang in C:\Users\sangxiang\Documents\shuadan\shuadan)
-2019-04-11 09:42:19.957 [main] INFO  com.sangxiang.app.App - The following profiles are active: dev
-2019-04-11 09:42:20.717 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-04-11 09:42:20.721 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-04-11 09:42:20.779 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33ms. Found 0 repository interfaces.
-2019-04-11 09:42:21.039 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncConfig' of type [com.sangxiang.app.config.AsyncConfig$$EnhancerBySpringCGLIB$$aa21ad5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-04-11 09:42:21.099 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$143a6a58] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-04-11 09:42:21.382 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
-2019-04-11 09:42:21.393 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
-2019-04-11 09:42:21.398 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2019-04-11 09:42:21.398 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
-2019-04-11 09:42:21.408 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Java\jdk1.8.0_201\jre\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Android\Android Studio\gradle\gradle-4.6\bin;C:\Program Files\PuTTY\;C:\Program Files\Redis\;C:\Users\sangxiang\AppData\Local\Microsoft\WindowsApps;;C:\Users\sangxiang\AppData\Local\Programs\Fiddler;.]
-2019-04-11 09:42:21.605 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-04-11 09:42:21.605 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1595 ms
-2019-04-11 09:42:21.640 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-2019-04-11 09:42:21.641 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2019-04-11 09:42:21.641 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
-2019-04-11 09:42:21.641 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-2019-04-11 09:42:21.641 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'myHttpLogFilter' to urls: [/*]
-2019-04-11 09:42:21.641 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
-2019-04-11 09:42:22.031 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
-2019-04-11 09:42:23.284 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-11 09:42:24.322 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
-2019-04-11 09:42:24.331 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
-2019-04-11 09:42:24.350 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
-2019-04-11 09:42:24.353 [main] INFO  com.sangxiang.app.App - Started App in 5.004 seconds (JVM running for 6.073)
+2019-04-13 16:25:33.626 [main] INFO  com.sangxiang.app.App - Starting App on sangxiangMBP with PID 49907 (/Users/sangxiang/Desktop/web-server/shuadan/app/target/classes started by sangxiang in /Users/sangxiang/Desktop/web-server/shuadan)
+2019-04-13 16:25:33.637 [main] INFO  com.sangxiang.app.App - The following profiles are active: dev
+2019-04-13 16:25:34.940 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-13 16:25:34.944 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-13 16:25:34.986 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-04-13 16:25:35.408 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncConfig' of type [com.sangxiang.app.config.AsyncConfig$$EnhancerBySpringCGLIB$$c8ca9de8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-13 16:25:35.462 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d262ed6b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-13 16:25:36.116 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2019-04-13 16:25:36.134 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2019-04-13 16:25:36.141 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-13 16:25:36.142 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-04-13 16:25:36.149 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sangxiang/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-13 16:25:36.266 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-04-13 16:25:36.267 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2478 ms
+2019-04-13 16:25:36.400 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-13 16:25:36.402 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-13 16:25:36.404 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
+2019-04-13 16:25:36.404 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-13 16:25:36.404 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'myHttpLogFilter' to urls: [/*]
+2019-04-13 16:25:36.404 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2019-04-13 16:25:37.103 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2019-04-13 16:25:39.045 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-13 16:25:40.574 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2019-04-13 16:25:40.610 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2019-04-13 16:25:40.611 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2019-04-13 16:25:40.617 [main] INFO  org.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-04-13 16:25:40.617 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2019-04-13 16:25:40.617 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8081"]
+2019-04-13 16:25:40.636 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-13 16:25:40.652 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService
+2019-04-13 16:28:26.876 [main] INFO  com.sangxiang.app.App - Starting App on sangxiangMBP with PID 50087 (/Users/sangxiang/Desktop/web-server/shuadan/app/target/classes started by sangxiang in /Users/sangxiang/Desktop/web-server/shuadan)
+2019-04-13 16:28:26.879 [main] INFO  com.sangxiang.app.App - The following profiles are active: dev
+2019-04-13 16:28:28.367 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-13 16:28:28.370 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-13 16:28:28.418 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2019-04-13 16:28:29.011 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncConfig' of type [com.sangxiang.app.config.AsyncConfig$$EnhancerBySpringCGLIB$$faabf89f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-13 16:28:29.089 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4444822] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-13 16:28:29.767 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2019-04-13 16:28:29.778 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2019-04-13 16:28:29.783 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-13 16:28:29.783 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-04-13 16:28:29.790 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/sangxiang/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-13 16:28:29.885 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-04-13 16:28:29.885 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2885 ms
+2019-04-13 16:28:29.928 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-13 16:28:29.928 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-13 16:28:29.928 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
+2019-04-13 16:28:29.928 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-13 16:28:29.928 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'myHttpLogFilter' to urls: [/*]
+2019-04-13 16:28:29.928 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2019-04-13 16:28:30.466 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2019-04-13 16:28:31.782 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-13 16:28:33.045 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2019-04-13 16:28:33.074 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-04-13 16:28:33.110 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2019-04-13 16:28:33.121 [main] INFO  com.sangxiang.app.App - Started App in 7.287 seconds (JVM running for 8.187)
+2019-04-13 16:31:52.095 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-13 16:31:52.095 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-04-13 16:31:52.108 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2019-04-13 16:42:55.005 [http-nio-8081-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-04-13 16:42:56.763 [http-nio-8081-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-04-13 16:42:57.373 [http-nio-8081-exec-7] INFO  com.sangxiang.app.utils.AppResult - 返回参数[{"version":1000,"cmd":"cmd","pageType":"1","respCode":"000","respMsg":"操作成功","pageSize":10,"pageNumber":1,"pages":1,"total":1,"sign":"emucoo","data":{"userToken":"2EN5yJHRfIk=","id":null,"username":null,"name":null,"password":null,"salt":null,"state":0,"mobile":null,"email":null,"createTime":null,"role":null,"money":0.0},"firstPage":false,"lastPage":false,"isFirstPage":false,"isLastPage":false}]
+2019-04-13 16:43:37.064 [http-nio-8081-exec-8] INFO  com.sangxiang.app.utils.AppResult - 返回参数[{"version":1000,"cmd":"cmd","pageType":"1","respCode":"000","respMsg":"操作成功","pageSize":10,"pageNumber":1,"pages":1,"total":1,"sign":"emucoo","data":"任务创建成功","firstPage":false,"lastPage":false,"isFirstPage":false,"isLastPage":false}]
+2019-04-13 16:45:27.242 [http-nio-8081-exec-10] INFO  com.sangxiang.app.utils.AppResult - 返回参数[{"version":1000,"cmd":"cmd","pageType":"1","respCode":"000","respMsg":"操作成功","pageSize":10,"pageNumber":1,"pages":1,"total":1,"sign":"emucoo","data":"任务创建成功","firstPage":false,"lastPage":false,"isFirstPage":false,"isLastPage":false}]
+2019-04-13 17:06:50.355 [Thread-17] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-13 17:06:50.362 [Thread-17] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-04-13 17:06:50.401 [Thread-17] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-04-13 17:06:50.471 [Thread-17] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService

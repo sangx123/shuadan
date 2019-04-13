@@ -40,17 +40,17 @@ logging:
   config: classpath:logback-base.xml
   path: logs
 
-  # 自定义文件上传路径
-  #upload-image-path : c:/images/
-upload:
-    #window服务器上的路径
-    #imagePath:  C:/Users/sangxiang/Downloads/nginx-1.15.10/nginx-1.15.10/html/images/
-    #mac上的路径
-    imagePath: /usr/local/var/www/images/
-    #linux服务器上的路径
-    #imagePath: /usr/local/nginx/html/images/
+# 自定义文件上传路径
+#upload-image-path : c:/images/
+upload :
+  #window服务器上的路径
+  #imagePath:  C:/Users/sangxiang/Downloads/nginx-1.15.10/nginx-1.15.10/html/images/
+  #mac上的路径
+  imagePath: /usr/local/var/www/images/
+  #linux服务器上的路径
+  #imagePath: /usr/local/nginx/html/images/
 
-    #正式服务器上的图片路径
-    imageURL: 192.168.65.44/images/
+  #正式服务器上的图片路径
+  imageURL: 192.168.65.44/images/
 
-    #mac上的本地路径
+  #mac上的本地路径

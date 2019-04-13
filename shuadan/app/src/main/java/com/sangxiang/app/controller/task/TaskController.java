@@ -1,5 +1,6 @@
 package com.sangxiang.app.controller.task;
 
+import com.github.pagehelper.PageInfo;
 import com.sangxiang.app.AppBaseController;
 import com.sangxiang.app.AppExecStatus;
 import com.sangxiang.app.controller.login.UserLoginInfo;
@@ -7,12 +8,14 @@ import com.sangxiang.app.controller.login.UserLoginParam;
 import com.sangxiang.app.sdk.token.UserTokenManager;
 import com.sangxiang.app.utils.AppResult;
 import com.sangxiang.app.utils.StringUtils;
+import com.sangxiang.base.rest.ApiResult;
 import com.sangxiang.dao.mapper.SysUserMapper;
 import com.sangxiang.dao.model.SysUser;
 import com.sangxiang.dao.model.Task;
 import com.sangxiang.dao.service.SysUserService;
 import com.sangxiang.dao.service.TaskService;
 import com.sangxiang.dao.service.UserTaskService;
+import com.sangxiang.model.Login.HomeTaskParam;
 import com.sangxiang.util.StringUtil;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.io.FileUtils;
@@ -129,6 +132,15 @@ public class TaskController extends AppBaseController {
         }
         return false;
     }
+
+
+    @PostMapping(value = "/getHomeTask")
+    @ApiOperation(value="任务大厅任务")
+    public ApiResult<PageInfo<Task>> getHomeTask(@RequestBody HomeTaskParam param){
+        PageInfo<Task> pageInfo= taskService.findPage(param.getPageNumber(),param.getPageSize(),param.getState());
+        return success(pageInfo);
+    }
+
 
     /**
      * 获取文件后缀名     *     * @param fileName     * @return
