@@ -3,29 +3,18 @@ package com.sangxiang.app.controller.task;
 import com.github.pagehelper.PageInfo;
 import com.sangxiang.app.AppBaseController;
 import com.sangxiang.app.AppExecStatus;
-import com.sangxiang.app.controller.login.UserLoginInfo;
-import com.sangxiang.app.controller.login.UserLoginParam;
 import com.sangxiang.app.sdk.token.UserTokenManager;
 import com.sangxiang.app.utils.AppResult;
 import com.sangxiang.app.utils.StringUtils;
-import com.sangxiang.base.rest.ApiResult;
-import com.sangxiang.dao.mapper.SysUserMapper;
-import com.sangxiang.dao.model.SysUser;
 import com.sangxiang.dao.model.Task;
-import com.sangxiang.dao.service.SysUserService;
 import com.sangxiang.dao.service.TaskService;
-import com.sangxiang.dao.service.UserTaskService;
 import com.sangxiang.model.Login.HomeTaskParam;
-import com.sangxiang.util.StringUtil;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang.RandomStringUtils;
-import org.apache.shiro.crypto.hash.Sha256Hash;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import tk.mybatis.mapper.entity.Example;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -33,10 +22,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 @RestController
 @RequestMapping("/api/task")
@@ -134,9 +120,9 @@ public class TaskController extends AppBaseController {
     }
 
 
-    @PostMapping(value = "/getHomeTask")
+    @PostMapping(value = "/getHomeTaskList")
     @ApiOperation(value="任务大厅任务")
-    public ApiResult<PageInfo<Task>> getHomeTask(@RequestBody HomeTaskParam param){
+    public AppResult<PageInfo<Task>> getHomeTaskList(@RequestBody HomeTaskParam param){
         PageInfo<Task> pageInfo= taskService.findPage(param.getPageNumber(),param.getPageSize(),param.getState());
         return success(pageInfo);
     }
