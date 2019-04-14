@@ -30,4 +30,8 @@ public interface TaskService extends BaseService<Task> {
      */
     PageInfo<Task> findPage(Integer pageNum, Integer pageSize,int state);
     List<Task> getShanhuTask(int userid, int status);
+
+    PageInfo<Task> findUserPublishTaskList(Integer pageNumber, Integer pageSize, Integer state, int userId);
+
+    PageInfo<Task> findAllUserPublishTaskList(Integer pageNumber, Integer pageSize, int userId);
 }

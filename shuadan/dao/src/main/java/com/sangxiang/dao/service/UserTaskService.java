@@ -11,6 +11,8 @@ import java.util.List;
 
 public interface UserTaskService extends BaseService<UserTask> {
     void createUserTask(Task task,SysUser user);
+    void createUserTask(Task task,int userId);
     PageInfo<Task> getUserTask(int userid,int state,int pageNum, int pageSize);
     List<Task> getUserTask(int userid, int status);
+    UserTask hasApplyTask(int userId, int id);
 }

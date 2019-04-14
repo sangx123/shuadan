@@ -13,6 +13,8 @@
     <result column="worker_price" property="workerPrice" jdbcType="REAL" />
     <result column="total_price" property="totalPrice" jdbcType="REAL" />
     <result column="state" property="state" jdbcType="INTEGER" />
+    <result column="working_num" property="workingNum" jdbcType="INTEGER" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
   </resultMap>
 
   <select id="queryById" parameterType="int" resultType="com.sangxiang.dao.model.Task">
@@ -21,5 +23,28 @@
   <select id="getShanhuTask"  resultType="com.sangxiang.dao.model.Task">
         select * from task where userid = #{userid} AND state=#{state}
     </select>
+
+  <select id="getEnableTask"  resultType="com.sangxiang.dao.model.Task">
+       SELECT * from
+        task where state=0
+        and worker_Num>working_num
+        order
+        by create_time desc
+    </select>
+
+    <select id="getUserPublishTask"  resultType="com.sangxiang.dao.model.Task">
+       SELECT * from
+        task where userid = #{userid} AND state=#{state}
+        order
+        by create_time desc
+    </select>
+
+    <select id="getAllUserPublishTask"  resultType="com.sangxiang.dao.model.Task">
+       SELECT * from
+        task where userid = #{userid}
+        order
+        by create_time desc
+    </select>
+
 
 </mapper>

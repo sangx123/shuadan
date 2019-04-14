@@ -9,4 +9,6 @@ import java.util.List;
 
 public interface UserTaskMapper extends MyMapper<UserTask> {
     List<Task> queryUserTask(@Param("userid")int userid,@Param("state")int state);
+
+    UserTask queryUserHasApplyTask(@Param("userid")int userid,@Param("taskid")int taskid);
 }

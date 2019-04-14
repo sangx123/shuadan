@@ -21,4 +21,10 @@
           t1.state=#{state}
 
     </select>
+
+  <select id="queryUserHasApplyTask"  resultType="com.sangxiang.dao.model.UserTask">
+          select t1.* from  user_task  t1 left join task t2
+          on t1.taskid=t2.id where t1.userid=#{userid} AND
+          t1.taskid=#{taskid}
+    </select>
 </mapper>

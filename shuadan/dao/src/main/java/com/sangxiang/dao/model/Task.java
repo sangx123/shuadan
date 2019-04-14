@@ -2,11 +2,9 @@ package com.sangxiang.dao.model;
 
 import com.sangxiang.base.model.BaseEntity;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 public class Task extends BaseEntity {
     @Id
@@ -32,6 +30,13 @@ public class Task extends BaseEntity {
     private Float totalPrice;
 
     private Integer state;
+
+    private Integer workingNum;
+
+    private String username;
+
+    @Transient
+    private List<String> images;
 
     public Integer getId() {
         return id;
@@ -119,5 +124,29 @@ public class Task extends BaseEntity {
 
     public void setState(Integer state) {
         this.state = state;
+    }
+
+    public List<String> getImages() {
+        return images;
+    }
+
+    public void setImages(List<String> images) {
+        this.images = images;
+    }
+
+    public Integer getWorkingNum() {
+        return workingNum;
+    }
+
+    public void setWorkingNum(Integer workingNum) {
+        this.workingNum = workingNum;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }

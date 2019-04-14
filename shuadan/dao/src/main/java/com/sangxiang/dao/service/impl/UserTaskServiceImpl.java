@@ -18,7 +18,7 @@ import java.util.List;
 
 
 @Service
-public class UserTaskServiceImpl extends BaseServiceImpl<UserTask>  implements UserTaskService {
+    public class UserTaskServiceImpl extends BaseServiceImpl<UserTask>  implements UserTaskService {
 
     @Autowired
     UserTaskMapper userTaskMapper;
@@ -37,6 +37,16 @@ public class UserTaskServiceImpl extends BaseServiceImpl<UserTask>  implements U
         userTask.setState(0);
         userTaskMapper.insertUseGeneratedKeys(userTask);
     }
+
+    @Override
+    public void createUserTask(Task task, int userId) {
+        UserTask userTask=new UserTask();
+        userTask.setTaskid(task.getId());
+        userTask.setUserid(userId);
+        userTask.setState(0);
+        userTaskMapper.insertUseGeneratedKeys(userTask);
+    }
+
     @Transactional(readOnly = true)
     @Override
     public PageInfo<Task> getUserTask(int userid,int state,int pageNum,int pageSize) {
@@ -49,5 +59,10 @@ public class UserTaskServiceImpl extends BaseServiceImpl<UserTask>  implements U
     @Override
     public List<Task> getUserTask(int userid, int status) {
         return userTaskMapper.queryUserTask(userid,status);
+    }
+
+    @Override
+    public UserTask hasApplyTask(int userId, int taskId) {
+        return  userTaskMapper.queryUserHasApplyTask(userId,taskId);
     }
 }

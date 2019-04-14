@@ -35,22 +35,36 @@ public class TaskServiceImpl extends BaseServiceImpl<Task> implements TaskServic
     @Transactional(readOnly = true)
     @Override
     public PageInfo<Task> findPage(Integer pageNum, Integer pageSize, int state) {
-        Example example = new Example(Task.class);
-        Example.Criteria criteria = example.createCriteria();
-        criteria.andEqualTo("state", state);
-        //倒序
-        example.orderBy("createTime").desc();
+//        Example example = new Example(Task.class);
+//        Example.Criteria criteria = example.createCriteria();
+//        criteria.andEqualTo("state", state);
+//
+//        //倒序
+//        example.orderBy("createTime").desc();
 
         //分页
         PageHelper.startPage(pageNum,pageSize);
-        List<Task> list = this.selectByExample(example);
-
+        List<Task> list = taskMapper.getEnableTask();
         return new PageInfo<>(list);
     }
 
     @Override
     public List<Task> getShanhuTask(int userid, int status) {
         return taskMapper.getShanhuTask(userid,status);
+    }
+
+    @Override
+    public PageInfo<Task> findUserPublishTaskList(Integer pageNumber, Integer pageSize, Integer state, int userId) {
+        PageHelper.startPage(pageNumber,pageSize);
+        List<Task> list = taskMapper.getUserPublishTask(userId,state);
+        return new PageInfo<>(list);
+    }
+
+    @Override
+    public PageInfo<Task> findAllUserPublishTaskList(Integer pageNumber, Integer pageSize, int userId) {
+        PageHelper.startPage(pageNumber,pageSize);
+        List<Task> list = taskMapper.getAllUserPublishTask(userId);
+        return new PageInfo<>(list);
     }
 
 

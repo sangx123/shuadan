@@ -3,6 +3,7 @@ package com.sangxiang.model;
 public class ApplyTaskParam {
     private int taskid;
 
+
     public int getTaskid() {
         return taskid;
     }
